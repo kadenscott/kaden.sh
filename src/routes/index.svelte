@@ -2,10 +2,6 @@
 	export const prerender = true;
 </script>
 
-<script>
-	import Counter from '$lib/Counter/index.svelte';
-</script>
-
 <svelte:head>
 	<title>$ kaden.sh</title>
 </svelte:head>
