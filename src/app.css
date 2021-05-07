@@ -6,10 +6,19 @@
 	/** Colours **/
 	--colour-bg: #183558;
 	--colour-bg-2: #2c4b79;
+	--colour-fg: #a7aabb;
+}
+
+:root.light-mode {
+	--colour-bg: #9c9c9c;
+	--colour-bg-2: #bbbbbb;
+	--colour-fg: #2f2f2f;
 }
 
 body {
 	min-height: 100vh;
 	margin: 0;
 	background-color: var(--colour-bg);
+	transition: background-color, color 0.2s ease-in-out;
+	color: var(--colour-fg);
 }
