@@ -19,6 +19,6 @@ body {
 	min-height: 100vh;
 	margin: 0;
 	background-color: var(--colour-bg);
-	transition: background-color, color 0.2s ease-in-out;
+	transition: background-color, color 0.2s;
 	color: var(--colour-fg);
 }
