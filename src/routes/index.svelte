@@ -5,8 +5,3 @@
 <svelte:head>
 	<title>$ kaden.sh</title>
 </svelte:head>
-
-<h1>Tinder for YouTube</h1>
-
-<p>I'm subscribed to <em>thousands</em> of channels on YouTube. This is just a symptom of using one account for half a decade. While this might seem like a non-issue (YouTube recommends videos you may like, not just videos from channels you're subscribed to), I've found that recently I've been recommended more and more videos I don't particularly want to watch.</p>
-<p>That's where this project comes in: I want to create an easy-to-use application to quickly sift through my many thousands of subscriptions. In my mind, this application would look similar to Tinder, where I'd be prompted with a channel I'm subscribed to, and some information about the channel. When I've decided whether I'd like to keep the subscription or not, I can swipe left/right on the prompt.</p>
