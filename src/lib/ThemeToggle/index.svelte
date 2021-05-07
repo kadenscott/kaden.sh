@@ -14,10 +14,11 @@
 
 <style>
     button {
-        background-color: var(--colour-bg-2);
+        background-color: var(--colour-bg);
         color: white;
         border-radius: 4px;
         border: gray 1px solid;
         font-size: 2em;
+        padding: 0.2em;
     }
 </style>
