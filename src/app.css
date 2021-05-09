@@ -4,7 +4,7 @@
 	--font-mono: 'Fira Mono', monospace;
 
 	/** Colours **/
-	--colour-bg: #183558;
+	--colour-bg: #123758;
 	--colour-bg-2: #2c4b79;
 	--colour-fg: #a7aabb;
 }
@@ -22,3 +22,4 @@ body {
 	transition: background-color, color 0.2s;
 	color: var(--colour-fg);
 }
+
