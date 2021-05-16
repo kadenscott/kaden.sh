@@ -7,12 +7,16 @@
 	--colour-bg: #123758;
 	--colour-bg-2: #2c4b79;
 	--colour-fg: #a7aabb;
+
+	--gradient-text: -webkit-linear-gradient(45deg, #83d58f, #248247);
 }
 
 :root.light-mode {
 	--colour-bg: #9c9c9c;
 	--colour-bg-2: #bbbbbb;
 	--colour-fg: #2f2f2f;
+
+	--gradient-text: -webkit-linear-gradient(45deg, #48b6b4, #193d61);
 }
 
 body {
