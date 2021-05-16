@@ -13,7 +13,7 @@
 
 <style>
     .icon-link {
-        background-color: #2f2f2f;
+        background-color: #1a1a1a;
         color: #9c9c9c;
         min-width: 2em;
         min-height: 2em;
