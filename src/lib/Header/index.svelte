@@ -170,10 +170,14 @@
         margin-top: 5em;
         list-style-type: none;
         padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .social-links li {
         font-size: 3rem;
+        margin: 0.1em;
         display: inline;
     }
 </style>
