@@ -18,9 +18,6 @@
 <header class="header" class:header--enlarged={isExpanded}>
     <div class="top">
         <div class="row--1">
-            <div class="row-child--left corner-left">
-
-            </div>
             <div class="row-child--mid title">
                 <h1>$ kaden.sh</h1>
             </div>
@@ -83,7 +80,7 @@
         justify-self: flex-start;
         display: flex;
         flex-direction: column;
-        width: 100%;
+        max-width: 60em;
         min-height: 10vh;
     }
 
@@ -93,6 +90,7 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
+
     }
 
     .top .row--2 {
