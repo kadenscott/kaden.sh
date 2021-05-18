@@ -68,6 +68,10 @@
         flex: 1;
     }
 
+    .header__banner h4 {
+        text-align: center;
+    }
+
     .link a {
         text-decoration: none;
         color: inherit;
