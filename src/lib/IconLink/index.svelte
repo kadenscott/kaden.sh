@@ -13,15 +13,26 @@
 
 <style>
     .icon-link {
-        background-color: #1a1a1a;
-        color: #9c9c9c;
+        background-color: var(--theme-bg-dark);
+        color: var(--theme-text-light);
+
         min-width: 2em;
         min-height: 2em;
+
         padding: 0.2em;
-        display: inline-flex;
+
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        border-radius: 0.2em;
+
+        transition: var(--transition-text)
+    }
+
+    .icon-link:hover {
+        color: var(--theme-text-highlight)
     }
 
     .icon-link__icon {
