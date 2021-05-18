@@ -11,6 +11,11 @@
 </ul>
 
 <style>
+    h1, h2, h3, h4, h5, h6 {
+        background-color: transparent;
+        color: var(--theme-text);
+    }
+
     .links {
         list-style-type: none;
         padding: 0;
