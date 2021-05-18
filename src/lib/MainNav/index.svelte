@@ -19,10 +19,13 @@
     .links {
         list-style-type: none;
         padding: 0;
+
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+
+        flex-wrap: wrap;
     }
 
     .link-element {
