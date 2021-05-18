@@ -3,14 +3,29 @@
     import '../app.css';
 </script>
 
-<main>
-    <slot/>
-</main>
+<div class="page-container">
+    <Header />
+
+    <main>
+        <slot/>
+    </main>
+</div>
 
 <style>
-    main {
+    .page-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
         width: 100vw;
-        background-color: var(--theme-bg);
         height: 100vh;
+
+        background-color: var(--theme-bg);
+        color: var(--theme-text);
+    }
+
+    main {
+        width: 60vw;
     }
 </style>
