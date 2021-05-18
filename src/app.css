@@ -22,6 +22,9 @@ body {
 	--colour-green: #71d18b;
 	--colour-green-dark: #4ba663;
 
+	--colour-orange: #ebb275;
+	--colour-orange-dark: #d47f5b;
+
 	/** Transition Variables **/
 	--transition-bg: background-color 0.1s ease-in-out;
 	--transition-text: color 0.1s ease-in-out;
@@ -34,6 +37,7 @@ body {
 .dark-theme {
 	--theme-bg: var(--colour-gray);
 	--theme-bg-alt: var(--colour-gray-dark);
+	--theme-bg-dark: var(--colour-gray-darker);
 
 	--theme-text: var(--colour-black);
 	--theme-text-dark: var(--colour-gray-dark);
@@ -64,8 +68,23 @@ p {
 	padding: 0.2em;
 }
 
-.gradient-text-green-blue {
+/** Gradient Variables **/
+.gradient-green-blue {
+	background-color: -webkit-linear-gradient(45deg, var(--colour-green), var(--colour-blue));
 	background: -webkit-linear-gradient(45deg, var(--colour-green), var(--colour-blue));
+}
+.gradient-red-orange {
+	background-color: -webkit-linear-gradient(45deg, var(--colour-red), var(--colour-orange));
+	background: -webkit-linear-gradient(45deg, var(--colour-red), var(--colour-orange));
+}
+
+.gradient-red-orange-dark {
+	background-color: -webkit-linear-gradient(45deg, var(--colour-red-dark), var(--colour-orange-dark));
+	background: -webkit-linear-gradient(45deg, var(--colour-red-dark), var(--colour-orange-dark));
+}
+
+.gradient-text {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
