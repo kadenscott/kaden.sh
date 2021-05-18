@@ -15,6 +15,9 @@ body {
 
 	--transition-bg: background-color 0.1s ease-in-out;
 	--transition-text: color 0.1s ease-in-out;
+
+	--font-mono: "Fira Mono", monospace;
+	--font-sans: "Open Sans", sans-serif;
 }
 
 .dark-theme {
@@ -23,4 +26,15 @@ body {
 
 	--theme-text: var(--colour-white);
 	--theme-text-highlight: var(--colour-blue);
+
+	--theme-font-mono: var(--font-mono);
+	--theme-font-sans: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--theme-font-mono);
+}
+
+p {
+	font-family: var(--theme-font-sans);
 }
