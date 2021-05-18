@@ -65,7 +65,7 @@ p {
 }
 
 .gradient-text-green-blue {
-	background: -webkit-linear-gradient(var(--colour-green), var(--colour-blue));
+	background: -webkit-linear-gradient(45deg, var(--colour-green), var(--colour-blue));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
