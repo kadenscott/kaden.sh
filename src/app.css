@@ -5,18 +5,22 @@ body {
 
 :root {
 	/** Colour Variables **/
-	--colour-white: #bfbfbf;
+	--colour-white: #9c9c9c;
 
 	--colour-black: #181818;
 
 	--colour-gray: #7f7f7f;
 	--colour-gray-dark: #525151;
+	--colour-gray-darker: #343434;
 
 	--colour-blue: #5c99ac;
 	--colour-blue-dark: #34707f;
 
 	--colour-red: #c46f6f;
 	--colour-red-dark: #a74646;
+
+	--colour-green: #71d18b;
+	--colour-green-dark: #4ba663;
 
 	/** Transition Variables **/
 	--transition-bg: background-color 0.1s ease-in-out;
@@ -32,7 +36,10 @@ body {
 	--theme-bg-alt: var(--colour-gray-dark);
 
 	--theme-text: var(--colour-black);
-	--theme-text-alt: var(--colour-gray-dark);
+	--theme-text-dark: var(--colour-gray-dark);
+	--theme-text-light: var(--colour-white);
+
+	--theme-text-bg: var(--colour-gray-darker);
 
 	--theme-text-highlight: var(--colour-blue);
 	--theme-text-highlight-alt: var(--colour-blue-dark);
@@ -43,12 +50,22 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: var(--theme-font-mono);
-	margin: 0;
 	padding: 0.2em;
+	margin: 0.35em 0;
+
+	background-color: var(--theme-text-bg);
+	color: var(--theme-text-light);
+	border-radius: 0.2em;
 }
 
 p {
 	font-family: var(--theme-font-sans);
 	margin: 0;
 	padding: 0.2em;
+}
+
+.gradient-text-green-blue {
+	background: -webkit-linear-gradient(var(--colour-green), var(--colour-blue));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
