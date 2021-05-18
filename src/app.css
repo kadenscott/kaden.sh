@@ -15,9 +15,14 @@ body {
 	--colour-blue: #5c99ac;
 	--colour-blue-dark: #34707f;
 
+	--colour-red: #c46f6f;
+	--colour-red-dark: #a74646;
+
+	/** Transition Variables **/
 	--transition-bg: background-color 0.1s ease-in-out;
 	--transition-text: color 0.1s ease-in-out;
 
+	/** Font Variables **/
 	--font-mono: "Fira Mono", monospace;
 	--font-sans: "Open Sans", sans-serif;
 }
