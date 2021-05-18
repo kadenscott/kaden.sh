@@ -4,7 +4,7 @@
 </script>
 
 <div class="page-container">
-    <Header />
+    <Header/>
 
     <main>
         <slot/>
@@ -16,16 +16,24 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: flex-start;
 
         min-width: 100vw;
         min-height: 100vh;
 
-        background-color: var(--theme-bg);
         color: var(--theme-text);
+        background-color: var(--theme-bg);
     }
 
     main {
-        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        min-width: 60vw;
+    }
+
+    @media (max-width: 769px) {
+        main {
+            max-width: 100vw;
+        }
     }
 </style>
