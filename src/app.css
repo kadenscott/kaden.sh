@@ -88,3 +88,6 @@ p {
 	-webkit-text-fill-color: transparent;
 }
 
+.text {
+	max-width: 66ch;
+}
