@@ -10,3 +10,5 @@
 	<title>$ kaden.sh</title>
 </svelte:head>
 
+<h1>Welcome to my website.</h1>
+<p>blah lbhal bhalhb lbha lah.</p>
