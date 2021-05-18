@@ -12,22 +12,30 @@
 
 <header class="header" class:header-expanded={isExpanded}>
     <div class="header__nav">
-        <h2 class="header__title">$ kaden.sh</h2>
+        <div class="header__title">
+            <h2>$&nbsp;kaden.sh</h2>
+        </div>
         <MainNav class="header__nav"/>
     </div>
-    <div class="header__banner">
-        <h2>This site is under construction.</h2>
+    <div class="header__banner gradient-red-orange-dark">
+        <h4>⚠️ This site is under construction. ⚠️</h4>
     </div>
 </header>
 
 <style>
+
     .header {
-        align-self: center;
-        width: 70vw;
+        min-width: 60vw;
+
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-self: center;
+
         margin-bottom: 2.5em;
+
+        border-bottom-right-radius: 0.2em;
+        border-bottom-left-radius: 0.2em;
 
         background-color: var(--theme-bg-alt);
     }
@@ -54,14 +62,32 @@
         align-items: center;
         justify-content: center;
 
-        flex: 1;
+        border-bottom-right-radius: 0.2em;
+        border-bottom-left-radius: 0.2em;
 
-        background-color: var(--colour-red-dark);
+        flex: 1;
     }
 
     .link a {
         text-decoration: none;
         color: inherit;
     }
+
+    @media (max-width: 769px) {
+        .header {
+            width: 100vw;
+        }
+
+        .header__nav {
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .header__title {
+        }
+
+    }
+
 
 </style>
