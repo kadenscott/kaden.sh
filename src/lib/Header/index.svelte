@@ -32,6 +32,11 @@
         background-color: var(--theme-bg-alt);
     }
 
+    h1, h2, h3, h4, h5, h6 {
+        background-color: transparent;
+        color: var(--theme-text);
+    }
+
     .header__nav {
         display: flex;
         flex-direction: row;
@@ -39,6 +44,8 @@
         justify-content: space-between;
 
         flex: 1;
+
+        margin-inline: 0.35em;
     }
 
     .header__banner {
