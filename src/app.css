@@ -5,7 +5,9 @@ body {
 
 :root {
 	/** Colour Variables **/
-	--colour-white: #dedede;
+	--colour-white: #bfbfbf;
+
+	--colour-black: #181818;
 
 	--colour-gray: #7f7f7f;
 	--colour-gray-dark: #525151;
@@ -24,8 +26,11 @@ body {
 	--theme-bg: var(--colour-gray);
 	--theme-bg-alt: var(--colour-gray-dark);
 
-	--theme-text: var(--colour-white);
+	--theme-text: var(--colour-black);
+	--theme-text-alt: var(--colour-gray-dark);
+
 	--theme-text-highlight: var(--colour-blue);
+	--theme-text-highlight-alt: var(--colour-blue-dark);
 
 	--theme-font-mono: var(--font-mono);
 	--theme-font-sans: var(--font-sans);
@@ -33,8 +38,12 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: var(--theme-font-mono);
+	margin: 0;
+	padding: 0.2em;
 }
 
 p {
 	font-family: var(--theme-font-sans);
+	margin: 0;
+	padding: 0.2em;
 }
