@@ -12,17 +12,35 @@
 </script>
 
 <header class="header" class:header-expanded={isExpanded}>
-    <h1>kaden.sh</h1>
-    <MainNav />
+    <div class="header__title">
+        <h1>kaden.sh</h1>
+    </div>
+    <div class="header__nav">
+        <MainNav />
+    </div>
 </header>
 
 <style>
     .header {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
         align-items: center;
         min-width: 80vw;
         background-color: gray;
+    }
+
+    .header__nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .header__title {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .header__nav, .header__title {
+        flex: 1;
+        margin-inline: 1em;
     }
 </style>
