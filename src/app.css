@@ -28,6 +28,7 @@
     --theme-colour-bg-darkest:  var(--colour-navy-darkest);
 
     --theme-colour-text:  var(--colour-gray);
+    --theme-colour-text-dark:  var(--colour-gray-darkest);
     --theme-colour-text-light: hsl(0, 0%, 75%);
 
     /** General variables **/
@@ -80,7 +81,7 @@ body {
 }
 
 .gradient-gray {
-    background-image: linear-gradient(45deg, var(--colour-gray), var(--colour-gray-dark));
+    background-image: linear-gradient(45deg, var(--colour-gray-dark), var(--colour-gray-darker));
 }
 
 .gradient-text {
