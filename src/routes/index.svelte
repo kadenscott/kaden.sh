@@ -11,3 +11,4 @@
 </svelte:head>
 
 <Splash />
+
