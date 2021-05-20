@@ -23,6 +23,14 @@ ul li {
     margin-inline: 0.5em;
     font-size: 2rem;
     list-style: none;
-    display: inline
+    display: inline;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+ul li a h6 {
+    background-color: inherit;
 }
 </style>

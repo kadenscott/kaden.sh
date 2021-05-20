@@ -3,12 +3,15 @@
 </script>
 
 <script>
+	import Splash from '$lib/Splash/index.svelte'
 	import MiniCard from '$lib/MiniCard/index.svelte'
 </script>
 
 <svelte:head>
 	<title>$ kaden.sh</title>
 </svelte:head>
+
+<Splash />
 
 <h2>Projects</h2>
 <p>here are my cool, epic, pogger projects!!!!</p>

@@ -18,7 +18,7 @@
 
     --colour-navy: hsl(210, 25%, 35%);
     --colour-navy-dark: hsl(210, 25%, 25%);
-    --colour-navy-darker: hsl(210, 25%, 15%);
+    --colour-navy-darker: hsl(210, 25%, 16%);
     --colour-navy-darkest: hsl(210, 25%, 10%);
 
     /** Theme settings **/
@@ -77,4 +77,9 @@ body {
 
 .gradient-red {
     background-image: linear-gradient(45deg, var(--colour-red), var(--colour-red-dark));
+}
+
+.gradient-text {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

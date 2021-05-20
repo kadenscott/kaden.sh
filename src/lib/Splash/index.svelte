@@ -1,43 +1,49 @@
+<div class="splash__container">
+    <div class="splash">
+        <h3 class="splash__text splash__header gradient-blue-green text-dark">welcome to the website of</h3>
+        <h1 class="splash__text splash__main"><span class="gradient-blue-green gradient-text">kaden scott</span></h1>
+        <h3 class="splash__text splash__footer gradient-blue-green text-dark">a <strong>software engineer</strong> from <span class="gradient-text-red">Ontario, 🇨🇦</span></h3>
+    </div>
+</div>
+
 <style>
     .splash__container {
-        display: flex;
-        justify-content: center;
+        min-width: 30vw;
+        align-self: center;
+        background-color: var(--theme-colour-bg-darker);
+        padding: 2em 4em;
+        border-radius: 0.5em;
+        margin-bottom: 3em;
     }
 
     .splash {
         display: flex;
         flex-direction: column;
-        width: 35em;
-    }
-
-    .splash h3 {
-        color: var(--colour-gray)
-    }
-
-    .splash * {
-        padding: 0;
-        margin: 0;
     }
 
     .splash__header {
-        align-self: flex-start;
+        font-size: 1.25rem;
     }
 
     .splash__main {
+        font-size: 5rem;
         align-self: center;
-        text-shadow: 0 0 10px var(--colour-green-2);
-        font-size: 4em;
     }
 
     .splash__footer {
-        align-self: flex-end;
+        font-size: 1.25rem;
+        text-align: right;
+    }
+
+    .splash__text {
+        background-color: inherit;
+    }
+
+    @media (max-width: 1200px) {
+        .splash {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
     }
 </style>
-
-<div class="splash__container">
-    <div class="splash">
-        <h3 class="font-mono splash__header">welcome to the website of</h3>
-        <h1 class="font-mono splash__main"><span class="gradient-text-green">kadenscott</span></h1>
-        <h3 class="font-mono splash__footer">a <strong>software engineer</strong> from <span class="gradient-text-red">Ontario, CA</span></h3>
-    </div>
-</div>

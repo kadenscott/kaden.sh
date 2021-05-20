@@ -22,14 +22,12 @@
 
 <style>
     .header {
+        font-size: 1.25rem;
         display: flex;
         flex-direction: row;
         align-items: center;
-        min-width: 80vw;
-        background-color: var(--theme-colour-bg-darkest);
-        padding-top: 1em;
-        padding-bottom: 1em;
-
+        width: 100%;
+        background-color: var(--theme-colour-bg-darker);
     }
 
     .header__nav {
@@ -40,6 +38,11 @@
     .header__title {
         display: flex;
         justify-content: flex-start;
+    }
+
+    .header__title > h1 {
+        font-size: 1.5rem;
+        background-color: inherit;
     }
 
     .header__nav, .header__title {
