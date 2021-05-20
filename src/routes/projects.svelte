@@ -1,3 +1,7 @@
+<script>
+    import MiniCard from '$lib/MiniCard/index.svelte'
+</script>
+
 <h2>Projects</h2>
 <p>here are my cool, epic, pogger projects!!!!</p>
 
