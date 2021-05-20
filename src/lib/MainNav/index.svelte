@@ -9,8 +9,10 @@
 <style>
 ul {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
 
+    justify-content: center;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -18,7 +20,8 @@ ul {
 }
 
 ul li {
-    font-size: 1.5rem;
+    margin-inline: 0.5em;
+    font-size: 2rem;
     list-style: none;
     display: inline
 }

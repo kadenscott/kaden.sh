@@ -1,23 +1,128 @@
 <script>
-    export let type;
-    export let name;
+    export let type = undefined;
+    export let name = undefined;
+
+    export let colour = undefined;
+
+    let headerClass;
+    let textClass;
+
+    if (!colour) {
+        headerClass = "";
+        textClass = "";
+    }
+
+    switch (colour) {
+        case "green": {
+            headerClass = "gradient-green"
+            textClass = "text-dark"
+            break
+        }
+        case "blue-green": {
+            headerClass = "gradient-blue-green"
+            textClass = "text-dark"
+            break
+        }
+        case "red": {
+            headerClass = "gradient-red"
+            textClass = "text-dark"
+            break
+        }
+        default: {
+            headerClass = ""
+            textClass = ""
+            break
+        }
+    }
 </script>
 
-<style>
-.card {
-}
-</style>
-
 <div class="card">
-    <div class="card__image">
-        <h2 class="card__image__badge">{type}</h2>
-        <slot name="image" />
+    <div class="card__header {headerClass}">
+        <h2 class="card__header__title {textClass}">{name}</h2>
+        <h5 class="card__header__badge">{type}</h5>
+        <slot name="image"/>
     </div>
     <div class="card__content">
-        <h1>{name}</h1>
-        <slot name="content" />
+        <slot name="content"/>
     </div>
-    <div class="card__button">
-
-    </div>
+    <a class="card__button">
+        <h2 class="card_button_link">Visit</h2>
+    </a>
 </div>
+
+<style>
+    .card {
+        background-color: var(--theme-colour-bg-darker);
+        width: 15em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        border-bottom-left-radius: 0.5em;
+        border-bottom-right-radius: 0.5em;
+        box-shadow: 0 5px var(--theme-colour-bg-darker);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card__header {
+        background-color: black;
+
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-between;
+
+        width: 100%;
+    }
+
+    .card__header__title {
+        background-color: transparent;
+        justify-self: flex-start;
+        align-self: center;
+    }
+
+    .card__header__badge {
+        right: 0;
+        margin-right: 0.4em;
+        position: absolute;
+        height: min-content;
+        width: min-content;
+
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+
+        justify-self: flex-end;
+    }
+
+    .card__content {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .card__button {
+        display: block;
+        margin: 0.25em;
+        border: var(--border);
+        background-color: hsla(0, 0%, 100%, 0.02);
+        border-radius: 0.5em;
+        text-align: center;
+        cursor: pointer;
+        transition: transform 0.1s ease-in-out, background-color 0.1s ease-in-out;
+    }
+
+    .card__button:hover {
+        transform: scale(1.02);
+    }
+
+    .card__button:active {
+        background-color: hsla(0, 0%, 0%, 0.05);
+    }
+
+    .card_button_link {
+        color: var(--theme-colour-text);
+        background-color: inherit;
+        user-select: none;
+    }
+
+</style>

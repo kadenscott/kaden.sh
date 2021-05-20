@@ -26,7 +26,10 @@
         flex-direction: row;
         align-items: center;
         min-width: 80vw;
-        background-color: gray;
+        background-color: var(--theme-colour-bg-darkest);
+        padding-top: 1em;
+        padding-bottom: 1em;
+
     }
 
     .header__nav {
@@ -42,5 +45,14 @@
     .header__nav, .header__title {
         flex: 1;
         margin-inline: 1em;
+    }
+
+    @media (max-width: 900px) {
+        .header {
+            width: 100vw;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
 </style>

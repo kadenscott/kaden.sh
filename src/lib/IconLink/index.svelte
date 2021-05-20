@@ -13,8 +13,6 @@
 
 <style>
     .icon-link {
-        background-color: var(--theme-bg-dark);
-        color: var(--theme-text-light);
 
         min-width: 2em;
         min-height: 2em;
@@ -27,12 +25,6 @@
         align-items: center;
 
         border-radius: 0.2em;
-
-        transition: var(--transition-text)
-    }
-
-    .icon-link:hover {
-        color: var(--theme-text-highlight)
     }
 
     .icon-link__icon {
