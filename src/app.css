@@ -88,3 +88,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.box-shadow {
+    box-shadow: 0 0 10px var(--colour-black);
+}
