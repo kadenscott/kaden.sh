@@ -11,7 +11,7 @@
     })
 </script>
 
-<header class="header" class:header-expanded={isExpanded}>
+<header class="header box-shadow" class:header-expanded={isExpanded}>
     <div class="header__bar header__bar__title">
         <div class="header__title">
             <h1>kaden.sh</h1>
