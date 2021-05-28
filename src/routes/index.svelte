@@ -18,14 +18,14 @@
         <h1>kadenscott</h1>
         <p>Software developer from Ontario, 🇨🇦</p>
         <div class="index__links">
-            <div class="index__link">
-                <Fa icon="{faChevronRight}"/>
-                <h3>&nbsp;<a href="/projects"> my projects</a></h3>
-            </div>
-            <div class="index__link">
-                <Fa icon="{faChevronRight}"/>
-                <h3>&nbsp;<a href="/content"> my content</a></h3>
-            </div>
+<!--            <div class="index__link">-->
+<!--                <Fa icon="{faChevronRight}"/>-->
+<!--                <h3>&nbsp;<a href="/projects"> my projects</a></h3>-->
+<!--            </div>-->
+<!--            <div class="index__link">-->
+<!--                <Fa icon="{faChevronRight}"/>-->
+<!--                <h3>&nbsp;<a href="/content"> my content</a></h3>-->
+<!--            </div>-->
         </div>
         <div class="index__socials">
             <SocialsNav />
