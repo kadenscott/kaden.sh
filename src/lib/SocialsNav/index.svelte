@@ -18,7 +18,7 @@
         flex-wrap: wrap;
         flex-direction: row;
 
-        justify-content: space-evenly;
+        justify-content: space-between;
         margin: 0;
         padding: 0;
         overflow: hidden;
@@ -26,7 +26,6 @@
     }
 
     ul li {
-        margin-inline: 0.5em;
         font-size: 3rem;
         list-style: none;
         display: inline;
