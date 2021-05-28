@@ -6,10 +6,10 @@
 
 <ul>
     <li class="font-mono"><a href="https://chat.ksc.sh"><h6><Fa icon="{faDiscord}" /></h6></a></li>
-    <li class="font-mono"><a href="https://chat.ksc.sh"><h6><Fa icon="{faYoutube}" /></h6></a></li>
-    <li class="font-mono"><a href="https://chat.ksc.sh"><h6><Fa icon="{faTwitter}" /></h6></a></li>
-    <li class="font-mono"><a href="https://chat.ksc.sh"><h6><Fa icon="{faGithub}" /></h6></a></li>
-    <li class="font-mono"><a href="https://chat.ksc.sh"><h6><Fa icon="{faFileCode}" /></h6></a></li>
+    <li class="font-mono"><a href="https://yt.ksc.sh"><h6><Fa icon="{faYoutube}" /></h6></a></li>
+    <li class="font-mono"><a href="https://twitter.com/kscottdev"><h6><Fa icon="{faTwitter}" /></h6></a></li>
+    <li class="font-mono"><a href="https://gh.ksc.sh"><h6><Fa icon="{faGithub}" /></h6></a></li>
+    <li class="font-mono"><a href="https://kscott.dev"><h6><Fa icon="{faFileCode}" /></h6></a></li>
 </ul>
 
 <style>
@@ -18,7 +18,7 @@
         flex-wrap: wrap;
         flex-direction: row;
 
-        justify-content: center;
+        justify-content: space-evenly;
         margin: 0;
         padding: 0;
         overflow: hidden;
@@ -27,7 +27,7 @@
 
     ul li {
         margin-inline: 0.5em;
-        font-size: 2rem;
+        font-size: 3rem;
         list-style: none;
         display: inline;
     }

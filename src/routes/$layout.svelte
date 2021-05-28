@@ -3,13 +3,9 @@
     import '../app.css';
 </script>
 
-<div class="page-container">
-    <Header/>
-
-    <main>
-        <slot/>
-    </main>
-</div>
+<main class="page-container">
+    <slot/>
+</main>
 
 <style>
     .page-container {
@@ -17,17 +13,9 @@
         flex-direction: column;
         align-items: center;
 
-        background-color: var(--theme-colour-bg-dark);
+        background-color: var(--theme-colour-bg);
 
         min-height: 100vh;
-    }
-
-    main {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        margin-top: 5em;
-        width: 60vw;
+        width: 100%;
     }
 </style>

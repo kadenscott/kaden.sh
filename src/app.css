@@ -2,13 +2,13 @@
     /** Colour variables **/
     --colour-black: hsl(0, 0%, 0%);
 
-    --colour-gray: hsl(0, 0%, 75%);
+    --colour-gray: hsl(0, 0%, 84%);
     --colour-gray-dark: hsl(0, 0%, 65%);
     --colour-gray-darker: hsl(0, 0%, 35%);
     --colour-gray-darkest: hsl(0, 0%, 15%);
 
-    --colour-blue: hsl(190, 50%, 50%);
-    --colour-blue-dark: hsl(190, 50%, 35%);
+    --colour-blue: #5da2eb;
+    --colour-blue-dark: #4440d1;
 
     --colour-red: hsl(0, 50%, 50%);
     --colour-red-dark: hsl(0, 50%, 35%);
@@ -16,18 +16,17 @@
     --colour-green: hsl(125, 50%, 55%);
     --colour-green-dark: hsl(125, 50%, 35%);
 
-    --colour-navy: hsl(210, 25%, 35%);
-    --colour-navy-dark: hsl(210, 25%, 25%);
-    --colour-navy-darker: hsl(210, 25%, 16%);
-    --colour-navy-darkest: hsl(210, 25%, 10%);
+    --colour-navy-dark: #3a506b;
+    --colour-navy-darker: #1c2541;
+    --colour-navy-darkest: #0b132b;
 
     /** Theme settings **/
-    --theme-colour-bg: var(--colour-navy);
+    --theme-colour-bg: var(--colour-gray);
     --theme-colour-bg-dark:  var(--colour-navy-dark);
-    --theme-colour-bg-darker:  var(--colour-navy-darker);
+    --theme-colour-bg-darker:  var(--colour-navy-darker); /* Header top */
     --theme-colour-bg-darkest:  var(--colour-navy-darkest);
 
-    --theme-colour-text:  var(--colour-gray);
+    --theme-colour-text:  var(--colour-gray-darkest);
     --theme-colour-text-dark:  var(--colour-gray-darkest);
     --theme-colour-text-light: hsl(0, 0%, 75%);
 
@@ -37,20 +36,25 @@
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
-    padding: 0.1em 0.25em;
+    height: min-content;
     font-family: 'JetBrains Mono', monospace;
 
-    color: var(--theme-colour-text-light);
+    color: var(--theme-colour-text);
 
-    background-color: var(--theme-colour-bg-darkest);
     border-radius: 0.2em;
+
+    line-height: 110%;
+}
+
+a {
+    color: inherit;
 }
 
 p {
-    margin: 0.35em;
+    margin: 0em;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    line-height: 1.5em;
+    line-height: 130%;
     color: var(--theme-colour-text);
 }
 
