@@ -22,12 +22,12 @@
 
     /** Theme settings **/
     --theme-colour-bg: var(--colour-gray);
-    --theme-colour-bg-dark:  var(--colour-navy-dark);
-    --theme-colour-bg-darker:  var(--colour-navy-darker); /* Header top */
-    --theme-colour-bg-darkest:  var(--colour-navy-darkest);
+    --theme-colour-bg-dark: var(--colour-navy-dark);
+    --theme-colour-bg-darker: var(--colour-navy-darker); /* Header top */
+    --theme-colour-bg-darkest: var(--colour-navy-darkest);
 
-    --theme-colour-text:  var(--colour-gray-darkest);
-    --theme-colour-text-dark:  var(--colour-gray-darkest);
+    --theme-colour-text: var(--colour-gray-darkest);
+    --theme-colour-text-dark: var(--colour-gray-darkest);
     --theme-colour-text-light: hsl(0, 0%, 75%);
 
     /** General variables **/
