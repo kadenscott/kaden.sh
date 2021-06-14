@@ -18,7 +18,7 @@
                 <ul class="header__nav__ul">
                     <li class="header__nav__li"><a href="https://github.com/kadenscott"><Fa icon={faGithub} /></a></li>
                     <li class="header__nav__li"><a href="https://twitter.com/kscottdev"><Fa icon={faTwitter} /></a></li>
-                    <li class="header__nav__li"><a href="https://yt.ksc.sh"><Fa icon={faYoutube} /></a></li>
+                    <li class="header__nav__li"><a href="https://www.youtube.com/channel/UCee8ekNyhwgU8SQM2liuibQ"><Fa icon={faYoutube} /></a></li>
                     <li class="header__nav__li"><a href="https://chat.ksc.sh"><Fa icon={faDiscord} /></a></li>
                 </ul>
             </nav>
