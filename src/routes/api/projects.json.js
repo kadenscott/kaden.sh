@@ -23,14 +23,14 @@ const projects = [
         linkText: "startmc.sh",
         categories: ["minecraft", "web"]
     },
-    {
-        name: "BingBonk",
-        description: "A fast-paced Minecraft minigame.",
-        hasLink: true,
-        link: "https://github.com/kadenscott/BingBonk",
-        linkText: "github.com",
-        categories: ["minecraft"]
-    }
+    // {
+    //     name: "BingBonk",
+    //     description: "A fast-paced Minecraft minigame.",
+    //     hasLink: true,
+    //     link: "https://github.com/kadenscott/BingBonk",
+    //     linkText: "github.com",
+    //     categories: ["minecraft"]
+    // }
 ]
 
 /**
