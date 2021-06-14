@@ -13,7 +13,7 @@
     <div class="header__top">
         <div class="header__left">
             <h1 class="header__title">kaden.sh</h1>
-            <p class="header__subtext">by kadenscott from Ontario, 🇨🇦</p>
+            <p class="header__subtext">the site of <strong>kadenscott</strong>, aka <strong>bluely</strong>.</p>
             <nav class="header__nav">
                 <ul class="header__nav__ul">
                     <li class="header__nav__li"><a href="https://github.com"><Fa icon={faGithub} /></a></li>
