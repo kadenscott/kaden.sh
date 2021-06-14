@@ -3,5 +3,8 @@
 		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-body {
+html, body {
+	height: 100vh;
+	margin: 0;
+	padding: 0;
 }
