@@ -67,6 +67,11 @@
         padding: 0;
         width: 100%;
         justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .header__nav__li {
+        margin-top: 1.5em;
     }
 
 
