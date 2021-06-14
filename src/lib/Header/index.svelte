@@ -1,0 +1,80 @@
+<script>
+    import Fa from 'svelte-fa'
+    import { faGithub, faTwitter, faYoutube, faDiscord } from '@fortawesome/free-brands-svg-icons'
+
+    /**
+     * If true, the header will be expanded. If false, it will be smaller.
+     * @type {boolean}
+     */
+    export let expanded = false;
+</script>
+
+<header class="header">
+    <div class="header__top">
+        <div class="header__left">
+            <h1 class="header__title">kaden.sh</h1>
+            <p class="header__subtext">by kadenscott from Ontario, 🇨🇦</p>
+            <nav class="header__nav">
+                <ul class="header__nav__ul">
+                    <li class="header__nav__li"><a href="https://github.com"><Fa icon={faGithub} /></a></li>
+                    <li class="header__nav__li"><a href="https://twitter.com/kscottdev"><Fa icon={faTwitter} /></a></li>
+                    <li class="header__nav__li"><a href="https://yt.ksc.sh"><Fa icon={faYoutube} /></a></li>
+                    <li class="header__nav__li"><a href="https://chat.ksc.sh"><Fa icon={faDiscord} /></a></li>
+                </ul>
+            </nav>
+        </div>
+        <img class="header__right" src="/logo.svg" alt="The logo of my website.">
+    </div>
+</header>
+
+<style>
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    
+    .header__top {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .header__right {
+        width: 10em;
+        border-radius: 0.4em;
+    }
+
+    .header__left {
+        flex: 1;
+        padding-right: 3em;
+    }
+
+    .header__title {
+        margin: 0;
+    }
+
+    .header__nav {
+        padding-top: 0.5em;
+    }
+
+    .header__nav__ul {
+        list-style-type: none;
+        display: flex;
+        padding: 0;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+
+    .header__nav__li a {
+        background-color: black;
+        padding: 0.35em 1em;
+        color: white;
+        border-radius: 0.25em;
+        font-size: 1.25rem;
+    }
+</style>
