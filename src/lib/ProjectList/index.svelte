@@ -1,30 +1,21 @@
 <script>
-    import ProjectCard from "$lib/ProjectCard/index.svelte";
+    // Project loading is in index.svelte route, as regular components cannot have a context="module" script tag.
+
+    import ProjectCard from '$lib/ProjectCard/index.svelte'
+    export let projects = [];
 </script>
 
 <h1>Projects</h1>
 <div class="projects">
-    <ProjectCard
-            name="mc.ksc.sh"
-            description="My Minecraft server, filled with tons of fun stuff."
-            hasLink="true"
-            link="https://mc.ksc.sh"
-            linkText="IP: mc.ksc.sh"
-    />
-    <ProjectCard
-            name="Quantum"
-            description="Minecraft plugin for random teleportation."
-            hasLink="true"
-            link="https://github.com/kadenscott/Quantum"
-            linkText="GitHub.com"
-    />
-    <ProjectCard
-            name="BingBonk"
-            description="A fast-paced Minecraft minigame."
-            hasLink="true"
-            link="https://github.com/kadenscott/BingBonk"
-            linkText="GitHub.com"
-    />
+    {#each projects as project (project.name)}
+            <ProjectCard
+                    name="{project.name}"
+                    description="{project.description}"
+                    hasLink="{project.hasLink}"
+                    link="{project.link}"
+                    linkText="{project.linkText}"
+            />
+    {/each}
 </div>
 
 
