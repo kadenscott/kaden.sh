@@ -16,7 +16,7 @@
             <p class="header__subtext">the site of <strong>kadenscott</strong>, aka <strong>bluely</strong>.</p>
             <nav class="header__nav">
                 <ul class="header__nav__ul">
-                    <li class="header__nav__li"><a href="https://github.com"><Fa icon={faGithub} /></a></li>
+                    <li class="header__nav__li"><a href="https://github.com/kadenscott"><Fa icon={faGithub} /></a></li>
                     <li class="header__nav__li"><a href="https://twitter.com/kscottdev"><Fa icon={faTwitter} /></a></li>
                     <li class="header__nav__li"><a href="https://yt.ksc.sh"><Fa icon={faYoutube} /></a></li>
                     <li class="header__nav__li"><a href="https://chat.ksc.sh"><Fa icon={faDiscord} /></a></li>
