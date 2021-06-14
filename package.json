@@ -13,7 +13,10 @@
   "type": "module",
   "dependencies": {
     "@fontsource/fira-mono": "^4.2.2",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@lukeed/uuid": "^2.0.0",
-    "cookie": "^0.4.1"
+    "cookie": "^0.4.1",
+    "svelte-fa": "^2.2.0"
   }
 }
