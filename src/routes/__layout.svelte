@@ -3,8 +3,6 @@
 
     import {page} from '$app/stores'
     import '../app.css';
-
-    console.log($page);
 </script>
 
 <div class="layout">
@@ -34,6 +32,7 @@
         width: 66ch;
         display: flex;
         flex-direction: column;
+        padding: 1em;
     }
 
     .layout {
