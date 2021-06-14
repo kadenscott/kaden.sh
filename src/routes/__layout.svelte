@@ -1,5 +1,6 @@
 <script>
     import Header from '$lib/Header/index.svelte'
+    import Footer from '$lib/Footer/index.svelte'
 
     import {page} from '$app/stores'
     import '../app.css';
@@ -13,7 +14,7 @@
             <hr>
         </div>
 
-        <main>
+        <main class="layout__content__main">
             <slot/>
         </main>
 
@@ -21,9 +22,7 @@
             <hr>
         </div>
 
-        <footer>
-            <p>with 😡 and ☕ from 🇨🇦 </p>
-        </footer>
+        <Footer />
     </div>
 </div>
 
@@ -33,6 +32,10 @@
         display: flex;
         flex-direction: column;
         padding: 1em;
+    }
+
+    .layout__content__main {
+        flex: 1;
     }
 
     .layout {
