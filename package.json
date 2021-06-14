@@ -16,6 +16,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@lukeed/uuid": "^2.0.0",
+    "@sveltejs/adapter-node": "^1.0.0-next.0",
     "cookie": "^0.4.1",
     "svelte-fa": "^2.2.0"
   }
