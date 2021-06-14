@@ -3,6 +3,10 @@
 		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.font-mono {
+	font-family: Consolas, monospace;
+}
+
 html, body {
 	height: 100vh;
 	margin: 0;
