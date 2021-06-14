@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>kaden.sh</title>
 </svelte:head>
 
 <ProjectList />
