@@ -47,8 +47,6 @@
     }
 
     .spacer {
-        margin-top: 1em;
-        margin-bottom: 1em;
     }
 
     .spacer hr {
