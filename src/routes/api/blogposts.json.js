@@ -5,14 +5,15 @@ const posts = []
 
 const getAllPosts = () => {
     try {
-        return fs.readdirSync("../static/posts").map((fileName) => {
+        return fs.readdirSync("./static/posts").map((fileName) => {
             const post = fs.readFileSync(
-                path.resolve("../static/posts", fileName),
+                path.resolve("./static/posts", fileName),
                 "utf-8"
             );
-            return grayMatter(post).data;
+            return post;
         });
     } catch (e) {
+        console.log(e)
         return [];
     }
 };
@@ -26,5 +27,5 @@ path.join()
  * @return response
  */
 export const get = async (req) => {
-    return {body: projects};
+    return {body: getAllPosts()};
 }
