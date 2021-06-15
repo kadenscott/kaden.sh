@@ -8,7 +8,7 @@
 
 <style>
     .nav-container {
-        width: 100%;
+        width: 100vw;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -18,7 +18,7 @@
     }
 
     .nav {
-        width: 66ch;
+        max-width: 100%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -33,6 +33,7 @@
         background-color: black;
         color: white;
         padding: 0.35em;
+        margin-inline: 2em;
         text-decoration: none;
         border-radius: 0.25em;
     }

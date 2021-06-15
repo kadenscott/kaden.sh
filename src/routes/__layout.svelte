@@ -29,7 +29,7 @@
 
 <style>
     .layout__content {
-        width: 66ch;
+        max-width: 66ch;
         display: flex;
         flex-direction: column;
         padding: 1em;
@@ -45,6 +45,7 @@
         flex-direction: column;
         align-items: center;
         height: 100vh;
+        padding: 0.1em;
     }
 
     .spacer hr {
