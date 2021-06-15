@@ -32,7 +32,7 @@
         width: 40em;
         display: flex;
         flex-direction: column;
-        padding: 1em;
+        align-items: center;
         flex: 1;
     }
 
@@ -54,7 +54,7 @@
 
     @media only screen and (max-width: 40em) {
         .layout__content {
-            width: 100%;
+            width: 90%;
         }
     }
 </style>
