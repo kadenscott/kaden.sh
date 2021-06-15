@@ -16,7 +16,7 @@
 <header class="header">
     <div class="header__top">
         <div class="header__left">
-            <h1 class="header__title">kaden.sh</h1>
+            <h1 class="header__title font-mono">kaden.sh</h1>
             {#if expanded}
                 <p class="header__subtext">the site of <strong>kadenscott</strong>, aka <strong>bluely</strong>.</p>
                 <nav class="header__nav">
@@ -74,6 +74,7 @@
 
     .header__title {
         margin: 0;
+        font-size: 2.5rem;
     }
 
     .header__nav {
