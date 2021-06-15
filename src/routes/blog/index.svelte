@@ -19,11 +19,17 @@
 <script>
     import marked from 'marked'
 
+    const renderer = new marked.Renderer()
+
+    renderer.link = (href, title, text) => {
+        return '<a rel="external" href="'+href+'">'+text+'</a>'
+    }
+
     export let post;
 </script>
 
 <div>
-    {@html marked(post)}
+    {@html marked(post, {renderer: renderer})}
 </div>
 
 
