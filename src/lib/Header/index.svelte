@@ -1,10 +1,9 @@
 <script>
-    import PageNav from '$lib/PageNav/index.svelte'
-
     import {page} from "$app/stores"
 
     import Fa from 'svelte-fa'
     import {faGithub, faTwitter, faYoutube, faDiscord} from '@fortawesome/free-brands-svg-icons'
+    import {faMusic} from '@fortawesome/free-solid-svg-icons'
 
     /**
      * If true, the header will be expanded. If false, it will be smaller.
@@ -32,6 +31,9 @@
                         </a></li>
                         <li class="header__nav__li"><a href="https://chat.ksc.sh">
                             <Fa icon={faDiscord}/>
+                        </a></li>
+                        <li class="header__nav__li"><a href="https://lawks.bandcamp.com">
+                            <Fa icon={faMusic}/>
                         </a></li>
                     </ul>
                 </nav>
