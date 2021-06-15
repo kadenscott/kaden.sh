@@ -36,9 +36,4 @@
         text-decoration: none;
         border-radius: 0.25em;
     }
-
-    .spacer {
-        flex-grow: 1;
-        width: 100%;
-    }
 </style>
