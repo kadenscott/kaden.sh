@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8"/>
-    <link rel="icon" href="/favicon.png"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    %svelte.head%
-    <!-- TODO Self host this font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap"
-          rel="stylesheet">
-</head>
-<body class="dark-theme">
-<div id="svelte">%svelte.body%</div>
-</body>
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="kaden.sh">
+		<meta property="og:title" content="kaden.sh">
+		<meta property="og:description" content="The site of kadenscott, aka bluely.">
+		<meta property="og:image" content="https://kaden.sh/logo.png">
+		<meta name="twitter:card" content="https://kaden.sh/logo.png">
+		<meta name="twitter:site" content="@kscottdev_">
+		<meta name="twitter:creator" content="@kscottdev_">
+
+		%svelte.head%
+	</head>
+	<body>
+		<div id="app">%svelte.body%</div>
+	</body>
 </html>

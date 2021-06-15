@@ -1,98 +1,14 @@
 :root {
-    /** Colour variables **/
-    --colour-black: hsl(0, 0%, 0%);
-
-    --colour-gray: hsl(0, 0%, 84%);
-    --colour-gray-dark: hsl(0, 0%, 65%);
-    --colour-gray-darker: hsl(0, 0%, 35%);
-    --colour-gray-darkest: hsl(0, 0%, 15%);
-
-    --colour-blue: #5da2eb;
-    --colour-blue-dark: #4440d1;
-
-    --colour-red: hsl(0, 50%, 50%);
-    --colour-red-dark: hsl(0, 50%, 35%);
-
-    --colour-green: hsl(125, 50%, 55%);
-    --colour-green-dark: hsl(125, 50%, 35%);
-
-    --colour-navy-dark: #3a506b;
-    --colour-navy-darker: #1c2541;
-    --colour-navy-darkest: #0b132b;
-
-    /** Theme settings **/
-    --theme-colour-bg: var(--colour-gray);
-    --theme-colour-bg-dark: var(--colour-navy-dark);
-    --theme-colour-bg-darker: var(--colour-navy-darker); /* Header top */
-    --theme-colour-bg-darkest: var(--colour-navy-darkest);
-
-    --theme-colour-text: var(--colour-gray-darkest);
-    --theme-colour-text-dark: var(--colour-gray-darkest);
-    --theme-colour-text-light: hsl(0, 0%, 75%);
-
-    /** General variables **/
-    --border: 5px solid var(--theme-colour-bg-darkest);
+	font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    height: min-content;
-    font-family: 'JetBrains Mono', monospace;
-
-    color: var(--theme-colour-text);
-
-    border-radius: 0.2em;
-
-    line-height: 110%;
+.font-mono {
+	font-family: Consolas, monospace;
 }
 
-a {
-    color: inherit;
-}
-
-p {
-    margin: 0em;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-    line-height: 130%;
-    color: var(--theme-colour-text);
-}
-
-body {
-    padding: 0;
-    margin: 0;
-}
-
-.text {
-    width: 66ch;
-}
-
-.text-dark {
-    color: var(--theme-colour-bg-darkest);
-}
-
-/** Gradients **/
-.gradient-green {
-    background-image: linear-gradient(45deg, var(--colour-green), var(--colour-green-dark));
-}
-
-.gradient-blue-green {
-    background-image: linear-gradient(45deg, var(--colour-green), var(--colour-blue));
-}
-
-.gradient-red {
-    background-image: linear-gradient(45deg, var(--colour-red), var(--colour-red-dark));
-}
-
-.gradient-gray {
-    background-image: linear-gradient(45deg, var(--colour-gray-dark), var(--colour-gray-darker));
-}
-
-.gradient-text {
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.box-shadow {
-    box-shadow: 0 0 10px var(--colour-black);
+html, body {
+	height: 100vh;
+	margin: 0;
+	padding: 0;
 }
