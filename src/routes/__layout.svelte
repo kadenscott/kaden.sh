@@ -46,9 +46,6 @@
         height: 100vh;
     }
 
-    .spacer {
-    }
-
     .spacer hr {
         flex-grow: 1;
     }
