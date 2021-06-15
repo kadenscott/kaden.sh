@@ -8,4 +8,4 @@ I thought it would only be right to preserve these pieces. Maybe I'm the only on
 - [The Way Must Be Tried \[The_Way_Must_Be_Tried_CSS_Feb1994.pdf\]](https://kaden.sh/pdf/The_Way_Must_Be_Tried_CSS_Feb1994.pdf)
 - [Microsoft Windows and X: partners on the desktop \[Windows_And_X_NetworkWorld_Jan1994.pdf\]](https://kaden.sh/pdf/Windows_And_X_NetworkWorld_Jan1994.pdf)
 
-__Note:__ depending on your browser, the PDF file may download instead of opening up in a new tab (like on Firefox.) If you're wondering why the PDFs aren't opening, check your downloads list.
+__Note:__ depending on your browser, the PDF file may download instead of opening up in a new tab (like on Firefox). If you're wondering why the PDFs aren't opening, check your downloads list.
