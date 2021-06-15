@@ -29,7 +29,7 @@
 
 <style>
     .layout__content {
-        width: 66ch;
+        width: 40em;
         display: flex;
         flex-direction: column;
         padding: 1em;
@@ -52,7 +52,7 @@
         flex-grow: 1;
     }
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 40em) {
         .layout__content {
             width: 100%;
         }
