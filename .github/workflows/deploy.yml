@@ -1,5 +1,4 @@
-
-name: Node.js CD
+name: Deployment
 
 # Controls when the action will run.
 on:
