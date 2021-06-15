@@ -33,6 +33,7 @@
         display: flex;
         flex-direction: column;
         padding: 1em;
+        flex-grow: 1;
     }
 
     .layout__content__main {
