@@ -21,6 +21,6 @@
 
 <ul class="nav">
     <li class="nav__link font-mono"><a href="/">index</a></li>
-    <li class="nav__link font-mono"><a href="/">projects</a></li>
-    <li class="nav__link font-mono"><a href="/">blog</a></li>
+    <li class="nav__link font-mono"><a href="/projects">projects</a></li>
+    <li class="nav__link font-mono"><a href="/blog">blog</a></li>
 </ul>
