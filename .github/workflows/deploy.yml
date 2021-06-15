@@ -12,9 +12,4 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
-          script: |
-            cd /home/web/kaden.sh/
-            git pull
-            npm run build
-            cd build
-            node index.js
+          script: bash -c "cd /home/web/kaden.sh && git pull && npm run build && cd build && node index.js"
