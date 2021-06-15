@@ -24,8 +24,8 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            cd ~/home/web/kaden.sh
+            cd ~/kaden.sh
             git pull origin master
             git status
             npm install --only=prod
-            pm2 restart kaden.sh
+            npm run build
