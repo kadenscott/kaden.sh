@@ -1,12 +1,13 @@
 <script>
     import Header from '$lib/Header/index.svelte'
     import Footer from '$lib/Footer/index.svelte'
+    import TopNav from '$lib/TopNav/index.svelte'
 
-    import {page} from '$app/stores'
     import '../app.css';
 </script>
 
 <div class="layout">
+    <TopNav />
     <div class="layout__content">
         <Header/>
 
@@ -40,8 +41,8 @@
 
     .layout {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         height: 100vh;
     }
 
