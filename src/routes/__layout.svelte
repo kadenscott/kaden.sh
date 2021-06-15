@@ -29,11 +29,11 @@
 
 <style>
     .layout__content {
-        max-width: 66ch;
+        width: 66ch;
         display: flex;
         flex-direction: column;
         padding: 1em;
-        flex-grow: 1;
+        flex: 1;
     }
 
     .layout__content__main {
@@ -45,10 +45,17 @@
         flex-direction: column;
         align-items: center;
         height: 100vh;
+        width: 100%;
         padding: 0.1em;
     }
 
     .spacer hr {
         flex-grow: 1;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .layout__content {
+            width: 100%;
+        }
     }
 </style>
