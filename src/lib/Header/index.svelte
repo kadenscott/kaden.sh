@@ -88,6 +88,7 @@
         padding: 1em;
         width: 100%;
         display: flex;
+        align-content: center;
     }
 
     .header__left {
@@ -111,6 +112,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-grow: 1;
     }
 
@@ -128,7 +130,7 @@
     }
 
     .header__nav__li {
-        margin-top: 1.5em;
+        margin: 1em;
     }
 
 
@@ -138,6 +140,7 @@
         color: white;
         border-radius: 0.25em;
         font-size: 1.25rem;
+        width: 3em;
     }
 
     @media screen and (max-width: 640px) {
@@ -147,6 +150,14 @@
 
         .header__logo {
             max-width: 10em;
+        }
+
+        .header__left, .header__right {
+            margin-inline: 0;
+        }
+
+        .header__nav__ul {
+            justify-content: center;
         }
     }
 </style>
