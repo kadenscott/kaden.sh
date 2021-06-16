@@ -5,9 +5,9 @@ const posts = []
 
 const getAllPosts = () => {
     try {
-        return fs.readdirSync("./static/posts").map((fileName) => {
+        return fs.readdirSync("./static/files/posts").map((fileName) => {
             const post = fs.readFileSync(
-                path.resolve("./static/posts", fileName),
+                path.resolve("./static/files/posts", fileName),
                 "utf-8"
             );
             return post;
