@@ -43,7 +43,6 @@
 <!--    </div>-->
 <!--</header>-->
 
-<div class="header__wrapper">
     <header class="header">
         <div class="header__left">
             <div class="header__text">
@@ -83,20 +82,12 @@
             </div>
         </div>
     </header>
-</div>
 
 <style>
-    .header__wrapper {
-        min-height: 10em;
-        display: flex;
-    }
-
     .header {
         margin-top: 1em;
         margin-bottom: 1em;
-        max-width: 40vw;
         width: 40vw;
-        height: 100%;
         display: flex;
     }
 
@@ -104,7 +95,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        flex: 2;
+        flex: 3;
         margin-right: 1em;
     }
 
@@ -113,7 +104,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        flex: 1;
+        flex-grow: 1;
         margin-left: 1em;
     }
 
@@ -124,6 +115,7 @@
     }
 
     .header__logo {
+        border-radius: 0.25em;
     }
 
     .header__nav {
