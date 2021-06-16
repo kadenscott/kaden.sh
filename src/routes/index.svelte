@@ -1,25 +1,33 @@
 <script context="module">
+    export let hydrate = false
+
     import ProjectCard from "$lib/ProjectCard/index.svelte";
 
     export async function load({fetch}) {
-        let project = null
+        let projectIndex = 0
+        let projects = []
 
         const res = await fetch('/api/projects.json')
 
         if (res.ok) {
-            let projects = await res.json();
+            projects = await res.json();
 
-            project = projects[Math.floor(Math.random() * projects.length)]
+            projectIndex = Math.floor(Math.random() * projects.length)
         }
 
         return {
-            props: {project: project}
+            props: {projects, projectIndex}
         }
     }
 </script>
 
 <script>
-    export let project
+    export let projects
+    export let projectIndex
+
+    export let project = projects[projectIndex]
+
+    console.log(projectIndex)
 </script>
 
 <svelte:head>
@@ -43,10 +51,5 @@
     .page {
         display: flex;
         flex-direction: column;
-    }
-
-    .inline-nav {
-        width: 20vw;
-        align-self: center;
     }
 </style>
