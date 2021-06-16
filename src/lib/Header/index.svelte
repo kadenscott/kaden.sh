@@ -43,45 +43,45 @@
 <!--    </div>-->
 <!--</header>-->
 
-    <header class="header">
-        <div class="header__left">
-            <div class="header__text">
-                <h1 class="header__title font-mono">kaden.sh</h1>
-                {#if expanded}
-                    <p class="header__subtext">the site of <strong>kadenscott</strong>, aka
-                        <strong>bluely</strong>.</p>
-                {/if}
-            </div>
+<header class="header">
+    <div class="header__left">
+        <div class="header__text">
+            <h1 class="header__title font-mono">kaden.sh</h1>
             {#if expanded}
-                <nav class="header__nav">
-                    <ul class="header__nav__ul">
-                        <li class="header__nav__li"><a href="https://github.com/kadenscott">
-                            <Fa icon={faGithub}/>
-                        </a></li>
-                        <li class="header__nav__li"><a href="https://twitter.com/kscottdev">
-                            <Fa icon={faTwitter}/>
-                        </a></li>
-                        <li class="header__nav__li"><a
-                                href="https://www.youtube.com/channel/UCee8ekNyhwgU8SQM2liuibQ">
-                            <Fa icon={faYoutube}/>
-                        </a></li>
-                        <li class="header__nav__li"><a href="https://chat.ksc.sh">
-                            <Fa icon={faDiscord}/>
-                        </a></li>
-                        <li class="header__nav__li"><a href="https://lawks.bandcamp.com">
-                            <Fa icon={faMusic}/>
-                        </a></li>
-                    </ul>
-                </nav>
+                <p class="header__subtext">the site of <strong>kadenscott</strong>, aka
+                    <strong>bluely</strong>.</p>
             {/if}
         </div>
-        <div class="header__right">
-            <div class="header__logo__wrapper">
-                <img class="header__logo" src="https://kaden.sh/logo.svg"
-                     alt="The logo of my website.">
-            </div>
+        {#if expanded}
+            <nav class="header__nav">
+                <ul class="header__nav__ul">
+                    <li class="header__nav__li"><a href="https://github.com/kadenscott">
+                        <Fa icon={faGithub}/>
+                    </a></li>
+                    <li class="header__nav__li"><a href="https://twitter.com/kscottdev">
+                        <Fa icon={faTwitter}/>
+                    </a></li>
+                    <li class="header__nav__li"><a
+                            href="https://www.youtube.com/channel/UCee8ekNyhwgU8SQM2liuibQ">
+                        <Fa icon={faYoutube}/>
+                    </a></li>
+                    <li class="header__nav__li"><a href="https://chat.ksc.sh">
+                        <Fa icon={faDiscord}/>
+                    </a></li>
+                    <li class="header__nav__li"><a href="https://lawks.bandcamp.com">
+                        <Fa icon={faMusic}/>
+                    </a></li>
+                </ul>
+            </nav>
+        {/if}
+    </div>
+    <div class="header__right">
+        <div class="header__logo__wrapper">
+            <img class="header__logo" class:header__logo--small={!expanded} src="https://kaden.sh/logo.svg"
+                 alt="The logo of my website.">
         </div>
-    </header>
+    </div>
+</header>
 
 <style>
     .header {
@@ -125,7 +125,7 @@
         display: flex;
         padding: 0;
         width: 100%;
-        justify-content: space-between;
+        justify-content: space-evenly;
         flex-wrap: wrap;
     }
 
