@@ -5,13 +5,13 @@
         const res = await fetch('/api/blogposts.json')
 
         if (res.ok) {
-            let posts = await res.json();
+            let posts = await res.json()
 
             post = posts[0]
         }
 
         return {
-            props: {post}
+            props: { post }
         }
     }
 </script>
@@ -25,7 +25,7 @@
         return '<a rel="external" href="'+href+'">'+text+'</a>'
     }
 
-    export let post;
+    export let post
 </script>
 
 <div>
