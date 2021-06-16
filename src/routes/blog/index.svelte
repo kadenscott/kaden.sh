@@ -1,5 +1,13 @@
 <script context="module">
+    import marked from 'marked'
+
     export async function load({fetch}) {
+        const renderer = new marked.Renderer()
+
+        renderer.link = (href, title, text) => {
+            return '<a rel="external" href="'+href+'">'+text+'</a>'
+        }
+
         let post = null
 
         const res = await fetch('/api/blogposts.json')
@@ -10,26 +18,20 @@
             post = posts[0]
         }
 
+        const formattedPost = post ? marked(post, {renderer}) : "<p>There are no blog posts to show.</p>"
+
         return {
-            props: { post }
+            props: { post: formattedPost }
         }
     }
 </script>
 
 <script>
-    import marked from 'marked'
-
-    const renderer = new marked.Renderer()
-
-    renderer.link = (href, title, text) => {
-        return '<a rel="external" href="'+href+'">'+text+'</a>'
-    }
-
     export let post
 </script>
 
 <div>
-    {@html marked(post, {renderer: renderer})}
+    {@html post}
 </div>
 
 
