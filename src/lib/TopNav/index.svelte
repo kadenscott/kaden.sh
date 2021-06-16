@@ -14,6 +14,7 @@
         align-items: center;
         padding-top: 0.35em;
         padding-bottom: 0.35em;
+        margin: 0;
         border-bottom: 1px solid;
     }
 
@@ -22,18 +23,21 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         list-style-type: none;
         padding: 0;
         margin-top: 0.3em;
         margin-bottom: 0.3em;
     }
 
+    .nav__link {
+        margin: 1em;
+    }
+
     .nav__link > a {
         background-color: black;
         color: white;
         padding: 0.35em;
-        margin-inline: 2em;
         text-decoration: none;
         border-radius: 0.25em;
     }
