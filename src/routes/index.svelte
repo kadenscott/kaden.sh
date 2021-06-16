@@ -1,5 +1,5 @@
 <script context="module">
-    export let hydrate = false
+    export const hydrate = false
 
     import ProjectCard from "$lib/ProjectCard/index.svelte";
 
